@@ -1,0 +1,62 @@
+<% include partials/header.ejs %>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">The Weather</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Search Results</a>
+            </li>
+            <li>
+                <a href="#">Other</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="form-align width">
+
+<h1 class="hone">Here is the forecast for: <%= data.current_observation.display_location.full %></h1>
+
+<!-- Temperature -->
+
+<p class="blue">Current Temperature: <%= data.current_observation.temp_f %></p>
+
+<!-- Outlook -->
+
+<p class="green">Current Outlook: <%= data.current_observation.weather %></p>
+
+<!-- Humidity -->
+
+<p class="red">Relative Humidity: <%= data.current_observation.relative_humidity %></p>
+
+<!-- Suggestion (if/else statement) -->
+
+<% if( data.current_observation.temp_f >= 70 ){ %>
+<p class="d-blue">It's hot out there! Be sure to drink plenty of water and wear sunscreen.</p>
+<% } else { %>
+<p class="d-blue">It's quite cool out there. Please don't forget to wear a jacket.</p>
+<% } %>
+
+<!-- Check different city -->
+
+<form action="/" method="get">
+<input type="submit" value="Check a different city" class="home-input">
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<% include partials/footer.ejs %>

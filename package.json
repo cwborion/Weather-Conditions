@@ -1,0 +1,20 @@
+{
+  "name": "weather_conditions",
+  "version": "1.0.0",
+  "description": "weather api project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "weather",
+    "api"
+  ],
+  "author": "caleb",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}

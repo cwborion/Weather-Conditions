@@ -1,0 +1,75 @@
+body {
+    font-family: Oswald !important; /* used !imortant to apply font-family to whole page */
+    margin: 0;
+    padding: 0;
+    background-color: #333 !important; /* Is ejs the reason I need to use '!important' to apply styles to body? */
+}
+
+.hone {
+    color: rgb(179, 179, 179);
+    font-weight: lighter;
+}
+
+.form-align {
+    padding-left: 300px;
+}
+
+.footer {
+    background-color: rgb(201, 201, 201);
+    position: fixed;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    bottom: 0;
+}
+
+.footspan {
+    color: #333;
+}
+
+.width {
+    width: 70%;
+}
+
+.blue {    /* class="blue" */
+    color: white;
+    background-color: rgb(64, 153, 255);
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.green {  /* class="green" */
+    color: white;
+    background-color: rgb(102, 233, 102);
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.red {     /* class="red" */
+    color: white;
+    background-color: rgb(245, 105, 105);
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.d-blue {    /* class="d-blue" */
+    color: white;
+    background-color: rgb(73, 73, 184);
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.home-input {
+    color: #337ab7;
+    background-color: #333;
+    border: none;
+    outline: 0;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
