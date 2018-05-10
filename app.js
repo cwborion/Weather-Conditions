@@ -40,20 +40,3 @@ app.get('*', function (req, res) {
 app.listen(3000, function () {
     console.log('Listening on port 3000')
 });
-
-/* below is jquery approach, may use if feeling evil like Waleed */
-
-/* <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            $.ajax({
-                url: "http://api.wunderground.com/api/62fa30955fb6ab18/geolookup/conditions/q/IA/Cedar_Rapids.json",
-                dataType: "jsonp",
-                success: function (parsed_json) {
-                    var location = parsed_json['location']['city'];
-                    var temp_f = parsed_json['current_observation']['temp_f'];
-                    alert("Current temperature in " + location + " is: " + temp_f);
-                }
-            });
-        });
-</script> */
